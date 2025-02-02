@@ -96,19 +96,3 @@ This project is licensed under the **MIT License**.
 ## 👤 Author
 - **Josh Boynton** (GitHub: [J-u-s-t-J-o-s-h](https://github.com/J-u-s-t-J-o-s-h))
 - **Email**: jboynton44@gmail.com
-
----
-
-### ✅ Rubric Checklist
-✔️ **Overview (3 pts)** → Purpose, features, and key functionalities.  
-✔️ **Build & Run Instructions (3 pts)** → Step-by-step setup guide.  
-✔️ **Usage Examples (2 pts)** → Real examples with expected outputs.  
-✔️ **Testing Instructions (2 pts)** → Running tests with example output.  
-
----
-
-```sh
-git add README.md
-git commit -m "Added complete README documentation"
-git push origin main
-```
