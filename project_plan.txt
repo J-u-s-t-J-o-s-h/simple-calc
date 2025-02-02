@@ -1,0 +1,101 @@
+SimpleCalc/
+│── src/                 # Source code files (program logic)
+│   ├── simplecalc.c     # Main entry point of the calculator
+│   ├── parser.c         # Parses and validates user input
+│   ├── math_ops.c       # Handles arithmetic and bitwise operations
+│   ├── error.c          # Manages error handling and messages
+│── include/             # Header files (function declarations)
+│   ├── parser.h         # Declares functions for input parsing
+│   ├── math_ops.h       # Declares functions for arithmetic operations
+│   ├── error.h          # Declares functions for error handling
+│── tests/               # Unit tests for verification
+│   ├── test_math.c      # Tests for math operations (CUnit)
+│── build/               # Compiled binaries (generated during build)
+│── references/          # Documentation and reference materials
+│── build.sh             # Shell script to build the project
+│── CMakeLists.txt       # CMake configuration for building the project
+│── README.md            # Project documentation and usage instructions
+│── .gitignore           # Specifies files to ignore in Git version control
+
+
+src/ — Source Code
+
+This directory contains the C source files (.c) that implement the calculator’s logic.
+
+File            Description
+simplecalc.c    Main entry point. Parses command-line args and calls other modules.
+parser.c        Handles input parsing and validation (e.g., checks if numbers are valid).
+math_ops.c      Implements supported arithmetic and bitwise operations.
+error.c         Manages error messages and handling logic.
+
+How They Work Together:
+- simplecalc.c calls parser.c to validate user input.
+- Once validated, simplecalc.c calls math_ops.c to perform calculations.
+- If an error occurs, error.c handles displaying appropriate messages.
+
+---
+
+include/ — Header Files
+
+This directory contains the C header files (.h) that define function prototypes and shared constants.
+
+File        Description
+parser.h    Declares functions for parsing command-line input.
+math_ops.h  Declares functions for math operations (addition, bitwise ops, etc.).
+error.h     Declares functions for error handling and messages.
+
+Why Use Header Files?
+- Encapsulation: Keeps function declarations separate from implementations.
+- Code Reusability: Allows .c files to share functions without duplicating code.
+- Prevents Compilation Errors: Ensures function declarations match implementations.
+
+---
+
+tests/ — Unit Tests
+
+This directory contains unit test files for verifying functionality using CUnit.
+
+File        Description
+test_math.c Contains unit tests for math operations (addition, division, bitwise).
+
+Testing Workflow:
+- Write test cases in test_math.c to validate different math functions.
+- Run make test to execute all tests.
+- If tests fail, debug and fix errors before proceeding.
+
+---
+
+build/ — Compiled Output
+
+This directory stores compiled binaries and object files. It is generated during the build process and not stored in Git.
+
+File/Directory   Description
+simplecalc       The final compiled executable.
+*.o files        Object files (compiled but not yet linked).
+
+Why Keep This Separate?
+- Prevents clutter in the main project directory.
+- Ensures source code and compiled files remain organized.
+
+---
+
+references/ — Documentation
+
+This directory stores project documentation, references, and external resources.
+
+File                Description
+requirements.txt    Notes on project requirements and goals.
+style_guide.md      Coding style guidelines (e.g., Barr-C standard).
+
+---
+
+Root-Level Files
+
+These files control the build process and provide project information.
+
+File            Description
+build.sh        Shell script to compile and build the project.
+CMakeLists.txt  CMake configuration for automated building.
+README.md       Documentation on how to install, run, and use SimpleCalc.
+.gitignore      Specifies files to ignore in Git (e.g., build/).
+project_plan.txt Shows a detailed outline of this project (this file)

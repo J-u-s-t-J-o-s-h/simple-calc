@@ -1,0 +1,5 @@
+/home/josh/projects/SimpleCalc/build/CMakeFiles/simplecalc.dir
+/home/josh/projects/SimpleCalc/build/CMakeFiles/test_math.dir
+/home/josh/projects/SimpleCalc/build/CMakeFiles/test.dir
+/home/josh/projects/SimpleCalc/build/CMakeFiles/edit_cache.dir
+/home/josh/projects/SimpleCalc/build/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/simplecalc.dir/src/simplecalc.c.o CMakeFiles/simplecalc.dir/src/parser.c.o CMakeFiles/simplecalc.dir/src/math_ops.c.o CMakeFiles/simplecalc.dir/src/error.c.o -o simplecalc 

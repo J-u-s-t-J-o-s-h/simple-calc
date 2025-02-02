@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/test_math.dir/tests/test_math.c.o CMakeFiles/test_math.dir/src/math_ops.c.o -o test_math  -lcunit 
